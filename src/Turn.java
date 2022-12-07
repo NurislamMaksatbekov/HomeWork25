@@ -1,3 +1,3 @@
 public enum Turn {
-    ROCK, PAPER, SCISSORS
+    ROCK, PAPER, SCISSORS, LIZARD, SPOCK
 }
