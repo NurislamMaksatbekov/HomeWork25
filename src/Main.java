@@ -4,7 +4,8 @@ public class Main {
         start();
     }
     public static void start(){
-
+        Player player = new Player();
+        player.playersTurn();
     }
 
     public static void mainPrint(){
