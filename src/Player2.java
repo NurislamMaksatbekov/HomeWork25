@@ -23,10 +23,10 @@ public class Player2 {
                     System.out.println("You chose: " + Turn.SCISSORS);
                     break;
                 case 4:
-                    System.out.println("Computer chose: " + Turn.LIZARD);
+                    System.out.println("You chose: " + Turn.LIZARD);
                     break;
                 case 5:
-                    System.out.println("Computer chose: " + Turn.SPOCK);
+                    System.out.println("You chose: " + Turn.SPOCK);
             }
         } catch (NumberFormatException e) {
             System.out.println("Enter the correct data!");

@@ -7,7 +7,7 @@ public class GameRPS {
     private int totalGames;
     private double percentOfWins;
 
-    public void game(){
+    public void startGame(){
         mainPrint();
         Player player = new Player();
         Computer computer = new Computer();
@@ -40,7 +40,7 @@ public class GameRPS {
                 throw new NumberFormatException();
             }switch (enter){
                 case 1:
-                    game();
+                    startGame();
                     break;
                 case 2:
                     lastPrint();
