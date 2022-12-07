@@ -13,11 +13,16 @@ public class GameRPS2 {
         Computer2 computer2 = new Computer2();
         player2.playersTurn();
         computer2.computersTurn();
-        if (player2.getMove() == 1 && computer2.getMove() == 2 && computer2.getMove() == 5 ||
-                player2.getMove() == 2 && computer2.getMove() == 3 && computer2.getMove() == 4 ||
-                player2.getMove() == 3 && computer2.getMove() == 1 && computer2.getMove() == 5 ||
-                player2.getMove() == 4 && computer2.getMove() == 1 && computer2.getMove() == 3 ||
-                player2.getMove() == 5 && computer2.getMove() == 2 && computer2.getMove() == 4) {
+        if (player2.getMove() == 1 && computer2.getMove() == 2 ||
+                player2.getMove() == 1 && computer2.getMove() == 5 ||
+                player2.getMove() == 2 && computer2.getMove() == 3 ||
+                player2.getMove() == 2 && computer2.getMove() == 4 ||
+                player2.getMove() == 3 && computer2.getMove() == 1 ||
+                player2.getMove() == 3 && computer2.getMove() == 5 ||
+                player2.getMove() == 4 && computer2.getMove() == 1 ||
+                player2.getMove() == 4 && computer2.getMove() == 3 ||
+                player2.getMove() == 5 && computer2.getMove() == 2 ||
+                player2.getMove() == 5 && computer2.getMove() == 4){
             System.out.println("Computer won!");
             loses++;
         } else if (player2.getMove() == computer2.getMove()) {
