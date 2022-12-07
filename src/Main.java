@@ -9,7 +9,7 @@ public class Main {
     }
 
     public static void mainPrint(){
-        System.out.println("Choose your move\n" +
+        System.out.println("Choose your move: (1-3)\n" +
                 "(1) ROCK\n" +
                 "(2) PAPER\n" +
                 "(3) SCISSORS");
