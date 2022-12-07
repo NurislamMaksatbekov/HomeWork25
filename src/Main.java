@@ -4,8 +4,8 @@ public class Main {
         start();
     }
     public static void start(){
-        Player player = new Player();
-        player.playersTurn();
+        GameRPS game = new GameRPS();
+        game.game();
     }
 
     public static void mainPrint(){

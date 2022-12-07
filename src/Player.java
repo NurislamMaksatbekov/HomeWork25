@@ -2,12 +2,18 @@ import java.util.Scanner;
 
 public class Player {
     Scanner sc = new Scanner(System.in);
+    private int playersMove;
+
+    public int getPlayersMove() {
+        return playersMove;
+    }
+
     public void playersTurn() {
         try {
-            int playersTurn = Integer.parseInt(sc.nextLine());
-            if(playersTurn > 3 || playersTurn <=0) {
+            playersMove = Integer.parseInt(sc.nextLine());
+            if(playersMove > 3 || playersMove <=0) {
                 throw new NumberFormatException();}
-                switch (playersTurn) {
+                switch (playersMove) {
                     case 1:
                         System.out.println("You chose: " + Turn.ROCK);
                         break;
@@ -22,6 +28,7 @@ public class Player {
             System.out.println("Enter the correct data!");
             playersTurn();
         }
+
     }
 
 
