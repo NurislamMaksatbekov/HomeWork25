@@ -61,8 +61,8 @@ public class GameRPS {
     }
     public static void mainPrint(){
         System.out.println("Choose your move: (1-3)\n" +
-                "(1) ROCK\n" +
-                "(2) PAPER\n" +
-                "(3) SCISSORS");
+                "(1) " + Turn.ROCK + "\n" +
+                "(2) " + Turn.PAPER + "\n" +
+                "(3) " + Turn.SCISSORS);
     }
 }
