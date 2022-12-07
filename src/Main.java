@@ -2,11 +2,12 @@ public class Main {
     public static void main(String[] args) {
         mainPrint();
         start();
-        lastPrint();
     }
     public static void start(){
         GameRPS game = new GameRPS();
         game.game();
+        lastPrint(game);
+
     }
 
     public static void mainPrint(){
@@ -16,11 +17,15 @@ public class Main {
                 "(3) SCISSORS");
     }
 
-    public static void lastPrint(){
+    public static void lastPrint(GameRPS games){
         System.out.printf("+-----------------------------------------------------------+\n" +
                            "| VICTORIES | LOSES | DRAWS | TOTAL GAMES | PERCENT OF WINS |\n" +
                            "|-----------------------------------------------------------+\n" +
                            "|     %s    |   %s  |   %s  |      %s     |        %s       |\n" +
-                           "+-----------------------------------------------------------+");
+                           "+-----------------------------------------------------------+",
+                games.getWins(), games.getLoses(), games.getDraws(),
+                games.getTotalGames(), games.getPercentOfWins());
+        ;
+
     }
 }

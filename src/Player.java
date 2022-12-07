@@ -4,6 +4,7 @@ public class Player {
     Scanner sc = new Scanner(System.in);
     private int playersMove;
 
+
     public int getPlayersMove() {
         return playersMove;
     }
