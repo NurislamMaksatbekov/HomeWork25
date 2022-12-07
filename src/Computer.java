@@ -2,11 +2,9 @@ import java.util.Random;
 public class Computer {
     Random rnd = new Random();
     private int random;
-
     public int getRandom() {
         return random;
     }
-
     public void computersTurn(){
             random = rnd.nextInt(3) + 1;
             switch (random) {
@@ -20,6 +18,5 @@ public class Computer {
                     System.out.println("Computer chose: " + Turn.SCISSORS);
                     break;
             }
-
     }
 }
