@@ -5,8 +5,5 @@ public class Main {
     public static void start(){
         GameRPS gameRPS = new GameRPS();
         gameRPS.game();
-
     }
-
-
 }
