@@ -13,12 +13,12 @@ public class GameRPS {
         Computer computer = new Computer();
         player.playersTurn();
         computer.computersTurn();
-        if (player.getPlayersMove() == 1 && computer.getRandom() == 2 ||
-            player.getPlayersMove() == 2 && computer.getRandom() == 3 ||
-            player.getPlayersMove() == 3 && computer.getRandom() == 1){
+        if (player.getMove() == 1 && computer.getMove() == 2 ||
+            player.getMove() == 2 && computer.getMove() == 3 ||
+            player.getMove() == 3 && computer.getMove() == 1){
             System.out.println("Computer won!");
             loses++;
-        }else if(player.getPlayersMove() == computer.getRandom()){
+        }else if(player.getMove() == computer.getMove()){
             System.out.println("Draw!");
             draws++;
         }else{

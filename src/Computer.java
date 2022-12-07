@@ -1,13 +1,13 @@
 import java.util.Random;
 public class Computer {
     Random rnd = new Random();
-    private int random;
-    public int getRandom() {
-        return random;
+    private int move;
+    public int getMove() {
+        return move;
     }
     public void computersTurn(){
-            random = rnd.nextInt(3) + 1;
-            switch (random) {
+        move = rnd.nextInt(3) + 1;
+            switch (move) {
                 case 1:
                     System.out.println("Computer chose: " + Turn.ROCK);
                     break;

@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Player {
     Scanner sc = new Scanner(System.in);
-    private int playersMove;
-    public int getPlayersMove() {
-        return playersMove;
+    private int move;
+    public int getMove() {
+        return move;
     }
     public void playersTurn() {
         try {
-            playersMove = Integer.parseInt(sc.nextLine());
-            if (playersMove > 3 || playersMove <= 0) {
+            move = Integer.parseInt(sc.nextLine());
+            if (move > 3 || move <= 0) {
                 throw new NumberFormatException();
             }
-            switch (playersMove) {
+            switch (move) {
                 case 1:
                     System.out.println("You chose: " + Turn.ROCK);
                     break;
