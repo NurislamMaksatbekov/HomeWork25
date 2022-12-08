@@ -60,7 +60,6 @@ public class GameRPS2 {
             continueGame();
         }
     }
-
     public void lastPrint() {
         System.out.printf("+-----------------------------------------------------------+\n" +
                         "| VICTORIES | LOSES | DRAWS | TOTAL GAMES | PERCENT OF WINS |\n" +
